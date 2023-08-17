@@ -3,7 +3,7 @@ import sys
 
 def max_path_sum(tri):
     # Using dynamic programming method and calculate
-    # from "bottom row to top row" calculation
+    # "from bottom row to top row" iteratively
     for row in range(len(tri) - 2, -1, -1):
         for col in range(len(tri[row])):
             left = tri[row + 1][col]
