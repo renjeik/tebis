@@ -38,7 +38,7 @@ if __name__ == "__main__":
         [63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
         [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23],
     ]
-    print("Part 1: " + str(max_path_sum(triangle)))
+    print("Part 1: " + str(max_path_sum(triangle)))  # Expect 1074
 
     # Part 2
     inputfile = sys.argv[1]
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     triangle = [input.split() for input in inputlist]
     triangle = [list(map(int, row)) for row in triangle]
 
-    print("Part 2: " + str(max_path_sum(triangle)))
+    print("Part 2: " + str(max_path_sum(triangle)))  # Expect 7273
 
     # Unit testing
     triangle = [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]]
